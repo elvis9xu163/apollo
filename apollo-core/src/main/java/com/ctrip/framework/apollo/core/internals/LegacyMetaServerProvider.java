@@ -28,6 +28,8 @@ public class LegacyMetaServerProvider implements MetaServerProvider {
         env.getProperty("local_meta", prop.getProperty("local.meta")));
     domains.put(Env.DEV,
         env.getProperty("dev_meta", prop.getProperty("dev.meta")));
+    domains.put(Env.TEST,
+        env.getProperty("test_meta", prop.getProperty("test.meta")));
     domains.put(Env.FAT,
         env.getProperty("fat_meta", prop.getProperty("fat.meta")));
     domains.put(Env.UAT,

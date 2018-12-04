@@ -7,6 +7,7 @@ import com.google.common.base.Preconditions;
  * <ul>
  *   <li>LOCAL: Local Development environment, assume you are working at the beach with no network access</li>
  *   <li>DEV: Development environment</li>
+ *   <li>TEST: Test environment</li>
  *   <li>FWS: Feature Web Service Test environment</li>
  *   <li>FAT: Feature Acceptance Test environment</li>
  *   <li>UAT: User Acceptance Test environment</li>
@@ -19,7 +20,7 @@ import com.google.common.base.Preconditions;
  * @author Jason Song(song_s@ctrip.com)
  */
 public enum Env{
-  LOCAL, DEV, FWS, FAT, UAT, LPT, PRO, TOOLS, UNKNOWN;
+  LOCAL, DEV, TEST, FWS, FAT, UAT, LPT, PRO, TOOLS, UNKNOWN;
 
   public static Env fromString(String env) {
     Env environment = EnvUtils.transformEnv(env);

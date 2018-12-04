@@ -9,6 +9,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>apollo-client</artifactId>
+	<version>1.1.2-SNAPSHOT</version>
 	<name>Apollo Client</name>
 	<properties>
 		<java.version>1.7</java.version>
@@ -32,6 +33,7 @@
 		<dependency>
 			<groupId>com.ctrip.framework.apollo</groupId>
 			<artifactId>apollo-core</artifactId>
+			<version>1.1.2-SNAPSHOT</version>
 		</dependency>
 		<!-- end of apollo -->
 		<!-- guice -->
@@ -81,4 +83,16 @@
 		</dependency>
 		<!-- end of test -->
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Yame Repository</name>
+			<url>http://repo.hq.in.ecpark.cn:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Yame Repository</name>
+			<url>http://repo.hq.in.ecpark.cn:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

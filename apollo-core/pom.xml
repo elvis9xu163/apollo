@@ -9,6 +9,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>apollo-core</artifactId>
+	<version>1.1.2-SNAPSHOT</version>
 	<name>Apollo Core</name>
 	<packaging>jar</packaging>
 	<properties>
@@ -52,4 +53,16 @@
 		</dependency>
 		<!-- end of test -->
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Yame Repository</name>
+			<url>http://repo.hq.in.ecpark.cn:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Yame Repository</name>
+			<url>http://repo.hq.in.ecpark.cn:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
